@@ -48,7 +48,7 @@ if (
       { flags: "w" }
     ); // create the js file
 	fileList.push(`${name.toLowerCase()}.js`)
-    jsFile.write(`import './${name}.css'\n\n`);
+    jsFile.write(`import './${name.toLowerCase()}.css'\n\n`);
     jsFile.write(`const ${name} = () => {\n`);
     jsFile.write("	return(\n");
     jsFile.write(`	<div className="${name.toLowerCase()}">\n	</div>\n`);
